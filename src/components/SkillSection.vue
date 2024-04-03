@@ -6,7 +6,7 @@ import {skillText} from "@/constants/index";
     <section id="skill">
         <div class="skill__inner">
             <h2 class="skill__title">
-                proceed
+                show
             </h2>
             <div class="skill__desc">
                 <div v-for="(text,key) in skillText" :key="key">

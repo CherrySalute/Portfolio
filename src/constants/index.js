@@ -8,8 +8,8 @@ export const headerNav = [
         url: "#skill",
     },
     {
-        title: "site",
-        url: "#site",
+        title: "carrer",
+        url: "#carrer",
     },
     {
         title: "portfolio",

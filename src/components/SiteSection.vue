@@ -4,7 +4,7 @@ import {siteText} from "@/constants/index";
 
 
 <template>
-    <section id="site">
+    <section id="carrer">
         <div class="site__inner">
             <h2 class="site__title">
                 Carrer <em>경력사항</em>
