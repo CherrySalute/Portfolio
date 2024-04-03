@@ -1,0 +1,165 @@
+<script setup>
+import {portText} from "@/constants/index";
+</script>
+
+<template>
+    <section id="port">
+        <div class="port__inner">
+            <div class="port__title">
+                portfolio <em>포트폴리오</em>
+            </div>
+            <div class="port__wrap">
+                <div class="port__item" v-for="(port,key) in portText" :key="key">
+                    <span class="num">{{key + 1}}</span>
+                    <!--img :src="port.img" alt="port.name" /-->
+                    <h3 class="title">{{port.title}}</h3>
+                    <p class="desc">{{port.desc}}</p>
+                    <a :href="port.view" target="_blank" class="site">사이트보기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+<script>
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+export default {
+    mounted: function(){
+    this.scrollAnimation();
+  },
+  methods: {
+    scrollAnimation(){
+        const horSection = gsap.utils.toArray(".port__item");
+
+        gsap.to(horSection,{
+           xPercent : -120*(horSection.length-1),
+           ease: "none",
+           scrollTrigger: {
+            trigger: "#port",
+            start: "top 56px",
+            end: "+=3000",
+            pin: true,
+            scrub: 1,
+            markers: false,
+            invalidateOnRefresh: true,
+            anticipatePin: 1,
+           }
+        });
+    }
+  }
+}
+</script>
+
+
+<style lang="scss" scoped>
+    @import "@/assets/scss/mixin";
+
+    #port{
+        width: 100%;
+        margin-top: 30vh;
+        // overflow: hidden;
+    }
+
+    .port__inner{
+        padding: 16px;
+
+        .port__title{
+            width: 100%; height: 5vw;
+            font-size: 4vw;
+            font-weight: 900;
+            line-height: 1.6;
+            font-family: var(--mainKor-font);
+            text-transform: uppercase;
+            color: var(--white);
+            border-bottom: 0.4vw solid var(--white100);
+            margin-bottom: 16px;
+            text-align: -0.26vw;
+
+            em{
+                font-size: 1.25rem;
+                font-weight: 400;
+                line-height: 2;
+            }
+        }
+
+        .port__wrap{
+            display: flex;
+            flex-wrap: wrap;
+            width: 6000px;
+
+            .port__item{
+                width: 500px; height: 70vh;
+                background-color: var(--subBg100);
+                padding: 2.5rem;
+                margin-right: 20px;
+
+                &:nth-child(1){background-color: var(--subBg100);}
+                &:nth-child(2){background-color: var(--subBg200);}
+                &:nth-child(3){background-color: var(--subBg300);}
+                &:nth-child(4){background-color: var(--subBg400);}
+                &:nth-child(5){background-color: var(--subBg100);}
+                &:nth-child(6){background-color: var(--subBg200);}
+                &:nth-child(7){background-color: var(--subBg300);}
+                &:nth-child(8){background-color: var(--subBg400);}
+                &:nth-child(9){background-color: var(--subBg100);}
+                &:nth-child(10){background-color: var(--subBg200);}
+                &:nth-child(11){background-color: var(--subBg300);}
+
+                .num{
+                    font-size: 2rem;
+                    font-family: var(--mainNum-font);
+                }
+
+                .img{
+                    display: block;
+                    margin-top: -20px;
+                    transition: margin-top 0.3s;
+
+                    img{
+                        border-radius: 5px;
+                        filter: saturate(0%);
+                        transition: all 0.3s;
+                    }
+
+                    &:hover{
+                        margin-top: 0;
+
+                        img{
+                            filter: saturate(100%);
+                        }
+                    }
+                }
+
+                .title{
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    color: var(--black100);
+                    text-align: center;
+                    padding: 0.8rem 0;
+                    margin-bottom: 1rem;
+                    border-bottom: 2px solid var(--black100);                  
+                }
+
+                .desc{
+                    font-size: 1rem;
+                }
+
+                .site{
+                    display: block;
+                    text-align: center;
+                    //padding: 0.625rem 1.5rem;
+                    margin-top: 1.5rem;
+                    transition: all 0.2s;
+
+                    &:hover{
+                        background-color: var(--black100);
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+</style>
