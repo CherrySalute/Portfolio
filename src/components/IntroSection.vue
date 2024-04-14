@@ -11,6 +11,7 @@ import {introText} from "@/constants/index";
             <div class="intro__text">
                 <div class="text">
                     <div>{{introText.desc}}</div>
+                    <div>{{introText.desc2}}</div>
                 </div>
                 <div class="img">
                     <img src="" alt="about">

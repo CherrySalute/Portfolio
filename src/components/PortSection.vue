@@ -5,159 +5,110 @@ import {portText} from "@/constants/index";
 <template>
     <section id="port">
         <div class="port__inner">
-            <div class="port__title">
-                portfolio <em>포트폴리오</em>
-            </div>
-            <div class="port__wrap">
-                <div class="port__item" v-for="(port,key) in portText" :key="key">
-                    <span class="num">{{key + 1}}</span>
-                    <!--img :src="port.img" alt="port.name" /-->
-                    <h3 class="title">{{port.title}}</h3>
-                    <p class="desc">{{port.desc}}</p>
-                    <a :href="port.view" target="_blank" class="site">사이트보기</a>
+            <h2 class="port__title">
+                Portfolio <em>제작한 작업물</em>
+            </h2>
+            <div class="port__list">
+                <div class="port__box" v-for="(port,key) in portText" :key="key">
+                    <div class="title">{{port.title}}</div>
+                    <div class="adress"><a :href="port.adress">✨click here</a></div>
+                    <div class="cont__box">                        
+                        <div class="time">- 제작기간: {{port.time}}</div>
+                        <div class="lang">- 적용기술/언어: {{port.lang}}</div>
+                        <div class="cont">- 작업내용: {{port.cont}}</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 </template>
 
-<script>
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-
-export default {
-    mounted: function(){
-    this.scrollAnimation();
-  },
-  methods: {
-    scrollAnimation(){
-        const horSection = gsap.utils.toArray(".port__item");
-
-        gsap.to(horSection,{
-           xPercent : -120*(horSection.length-1),
-           ease: "none",
-           scrollTrigger: {
-            trigger: "#port",
-            start: "top 56px",
-            end: "+=3000",
-            pin: true,
-            scrub: 1,
-            markers: false,
-            invalidateOnRefresh: true,
-            anticipatePin: 1,
-           }
-        });
-    }
-  }
-}
-</script>
 
 
 <style lang="scss" scoped>
-    @import "@/assets/scss/mixin";
-
     #port{
-        width: 100%;
-        margin-top: 30vh;
-        // overflow: hidden;
+        color: var(--white);
+        padding-top: 20vh;
     }
 
     .port__inner{
+         width: 100%; height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
         padding: 16px;
 
+        @media (max-width: 800px){
+            justify-content: center;
+        }        
+
         .port__title{
-            width: 100%; height: 5vw;
-            font-size: 4vw;
-            font-weight: 900;
-            line-height: 1.6;
-            font-family: var(--mainKor-font);
+            font-size: 10vw;
+            font-weight: 700;
             text-transform: uppercase;
-            color: var(--white);
-            border-bottom: 0.4vw solid var(--white100);
-            margin-bottom: 16px;
-            text-align: -0.26vw;
+            line-height: 1;
+            white-space: nowrap;
+            text-indent: -0.5vw;
+            letter-spacing: -0.3vw;
+            padding-bottom: 10vh;
 
             em{
-                font-size: 1.25rem;
+                font-size: 3vw;
                 font-weight: 400;
-                line-height: 2;
             }
+
+            @media (max-width: 800px){
+                padding: 5vh 0;
+            }   
         }
 
-        .port__wrap{
+        .port__list{
             display: flex;
             flex-wrap: wrap;
-            width: 6000px;
 
-            .port__item{
-                width: 500px; height: 70vh;
-                background-color: var(--subBg100);
-                padding: 2.5rem;
-                margin-right: 20px;
-
-                &:nth-child(1){background-color: var(--subBg100);}
-                &:nth-child(2){background-color: var(--subBg200);}
-                &:nth-child(3){background-color: var(--subBg300);}
-                &:nth-child(4){background-color: var(--subBg400);}
-                &:nth-child(5){background-color: var(--subBg100);}
-                &:nth-child(6){background-color: var(--subBg200);}
-                &:nth-child(7){background-color: var(--subBg300);}
-                &:nth-child(8){background-color: var(--subBg400);}
-                &:nth-child(9){background-color: var(--subBg100);}
-                &:nth-child(10){background-color: var(--subBg200);}
-                &:nth-child(11){background-color: var(--subBg300);}
-
-                .num{
-                    font-size: 2rem;
-                    font-family: var(--mainNum-font);
-                }
-
-                .img{
-                    display: block;
-                    margin-top: -20px;
-                    transition: margin-top 0.3s;
-
-                    img{
-                        border-radius: 5px;
-                        filter: saturate(0%);
-                        transition: all 0.3s;
-                    }
-
-                    &:hover{
-                        margin-top: 0;
-
-                        img{
-                            filter: saturate(100%);
-                        }
-                    }
-                }
+            .port__box{
+                width: calc(100% / 3 - 20px); height: 40vh;
+                border: 1px solid var(--white);
+                border-radius: 20px;
+                padding: 20px;
+                margin: 30px 10px;
+                transition: all 0.3s ease-out;
 
                 .title{
-                    font-size: 1.5rem;
+                    font-size: 3vw;
                     font-weight: 700;
-                    color: var(--black100);
-                    text-align: center;
-                    padding: 0.8rem 0;
-                    margin-bottom: 1rem;
-                    border-bottom: 2px solid var(--black100);                  
+
+                    @media (max-width: 800px){
+                        font-size: 24px;
+                        margin-bottom: 10px;
+                    }  
                 }
 
-                .desc{
-                    font-size: 1rem;
-                }
+                .adress{
+                    font-weight: 500;
 
-                .site{
-                    display: block;
-                    text-align: center;
-                    //padding: 0.625rem 1.5rem;
-                    margin-top: 1.5rem;
-                    transition: all 0.2s;
-
-                    &:hover{
-                        background-color: var(--black100);
-                        color: var(--white);
+                    a:hover{
+                        color: #a7272e;
                     }
+                }
+
+                .cont__box{
+                    margin-top: 2vh;
+                    padding-left: 1vw;
+                }
+
+                &:hover{
+                    transform: translateY(-20px);
+                }
+
+                @media (max-width: 800px){
+                    width: calc(100% / 2 - 20px);
+                }  
+
+                @media (max-width: 500px){
+                    width: 100%; height: 100%;
+                    margin: 20px 10px;
                 }
             }
         }

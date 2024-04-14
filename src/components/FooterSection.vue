@@ -14,6 +14,7 @@
     #footer{         
          font-family: var(--mainKor-font);
          margin-bottom: 40px;
+         color: var(--white);
     }
 
     .footer__inner{

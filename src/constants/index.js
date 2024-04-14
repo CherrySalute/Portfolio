@@ -4,10 +4,6 @@ export const headerNav = [
         url: "#intro",
     },
     {
-        title: "skill",
-        url: "#skill",
-    },
-    {
         title: "carrer",
         url: "#carrer",
     },
@@ -23,124 +19,116 @@ export const headerNav = [
 
 export const introText = {  
     title: "Front End",
-    desc: "It's never too late.",
+    desc: "There are better starters than me",
+    desc2: "but I’m a strong finisher.",
 }
 
-export const skillText = [
+
+export const carrerText = [
     {
-        title: "결과물이 가져다 주는 행복함",
-        desc: "무엇인가를 만드는 과정속에서 일어나는 크고 작은 문제들을 해결하려고 움직인다. 나는 과연 이 역경과 고난을 어떻게 이겨내어 완성시킬 것인가? 그렇게 의문을 던지고 해결법을 찾게되어 결과물이 나왔을 때 주는 행복함이 나를 이 곳으로 이끌었다. ",
+        title: "렌탈프랜드",
+        project: "",
+        adress: "https://rentalfriend.co.kr",
+        join: "웹사이트 개발/유지보수 퍼블리싱 (참여도 30%)",
+        lang: "html5, css, javascript, jQuery, 카페24 클라이언트",
+        cont: "기존 대비 트래픽 증감 폭이 줄고 사이트 로딩시간 감소",
     },
     {
-        title: "다양한 경험이 주는 노련함",
-        desc: "세상에는 다양한 사람이 존재한다는 것을 사회생활을 하면서 깨닫게 되었다. 직접 고객과 얼굴을 맞대고 이야기하는 서비스직. 손님이 안보이는 곳에서 묵묵히 자기 할일을 하는 주방직. 직장동료간의 팀워크로 시너지를 내며 일하는 사무직 등 경험해보며 다양한 사람들을 만나 시야를 넓히고 그 사이에서 일어나는 일들을 노련하게 풀어내었다.",
+        title: "올네고",
+        project: "",
+        adress: "https://allnego.com",
+        join: "웹사이트 개발/유지보수 퍼블리싱 (참여도 10%)",
+        lang: "php, css, javascript, jQuery, 해피CGI 재능마켓 클라이언트",
+        cont: "검색창 기능 구현 및 메인페이지 목록 리뉴얼",
     },
     {
-        title: "주어진 일을 열심히 하는 성실함",
-        desc: "항상 어떠한 일을 맡으면 그 일에 집중하고 최선을 다하려고 한다. 어느 직장을 가도 눈치보며 일을 안하는 사람과 묵묵히 자기만의 일을 수행하는 사람이 나눠지기 마련이다. 나는 항상 후자에 속해 빨리 일을 끝내고 싶은 마음만 가질 뿐이다. ",
+        title: "niccier",
+        project: "Project 기간 : 2022.10~ 2023.01",
+        adress: "https://niccier.com",
+        join: "웹 퍼블리싱 총괄 및 홈페이지 유지보수 (참여도 100%)",
+        lang: "html5, css, javascript, jQuery, 카페24 클라이언트",
+        cont: "사이트 런칭 및 유지보수",
     },
 ]
 
-export const siteText = [
-    {
-        text: ["make by cafe24","-","rentalfriend"],
-        title: "카페24를 기반으로 한 렌탈프랜드 공식사이트",
-        view: "https://rentalfriend.co.kr/",
-        info: ["담당업무: 퍼블리싱(30%),유지보수","","개발언어: HTML5/CSS3,JavaScript"],
-    },
-    {
-        text: ["make by happycgi","-","allnego"],
-        title: "happycgi 재능마켓 솔루션으로 제작된 올네고 공식사이트",
-        view: "https://allnego.com/",
-        info: ["담당업무: 퍼블리싱(10%),유지보수","","개발언어: HTML5/CSS3,JavaScript,PHP"],
-    },
-    {
-        text: ["make by cafe24","-","niccier"],
-        title: "카페24를 기반으로 제작된 Niccer 공식사이트",
-        view: "https://niccier.com/",
-        info: ["담당업무: 퍼블리싱(100%),유지보수","","개발언어: HTML5/CSS3,JavaScript"],
-    },
-]
-
-//import port01 from "../assets/img/";
 
 export const portText = [
-    {
-        //img: "",  
-        //name:"dfbdf",
-        title:"Kuliner",
-        desc:"식당의 메뉴소개와 서비스 내용을 알려주는 기초적인 포트폴리오입니다. 마우스 오버를 이용하여 좀 더 역동적으로 보이게 제작 되었습니다. ",
-        view:"https://cherrysalute.github.io/portfolio_kuliner/",
+   {
+        title: "kuliner",
+        adress: "https://cherrysalute.github.io/portfolio_kuliner/",
+        time: "2022.04.03",
+        lang: "html5, css3, javascript",
+        cont: "wow.js를 활용하여 사이트 내용에 역동적인 애니메이션 효과를 적용하였고 스크롤링을 하면 효과가 나타나게 한 결과물입니다.",
+   },
+   {
+        title: "cake house",
+        adress: "https://cherrysalute.github.io/portfolio_cakehouse/",
+        time: "2022.04.04",
+        lang: "html5, css3",
+        cont: "어려운 기술 없이 기초적인 코드로 작업하였지만 깔끔하고 세련된 디자인으로 작업한 포트폴리오입니다.",
+   },
+   {
+        title: "wedding site",
+        adress: "https://cherrysalute.github.io/portfolio_weddingsite/",
+        time: "2022.04.19",
+        lang: "html5, css3",
+        cont: "기본적인 구조를 쌓아 화려하고 세련되었으며 규칙적인 배열로 사이트에 안정감을 주도록 만든 포트폴리오입니다.",
     },
     {
-        //img: "",  
-        //name:"dfbdf",
-        title:"Cake house",
-        desc:"디저트가게의 전반적인 소개를 하는 포트폴리오입니다. 애니메이터를 통해 각 메뉴별로 이동하는 기능을 구현하여 제작되었습니다. ",
-        view:"https://cherrysalute.github.io/portfolio_cakehouse/",
+        title: "BnO",
+        adress: "https://cherrysalute.github.io/portfolio_BnO/",
+        time: "2022.04.23",
+        lang: "html5, css3",
+        cont: "flex를 이용하여 일정한 간격으로 정렬된 제품 정렬을 보여주며 모던한 디자인으로 제작한 결과물입니다.",
+   },
+   {
+        title: "Origin",
+        adress: "https://cherrysalute.github.io/portfolio_Origin/",
+        time: "2022.05.01",
+        lang: "html5, css3, javascript",
+        cont: "grid로 규칙적인 배치를 주었고, 반응형으로 제작되어 일정 width의 구간마다 값을 다르게 주어 다른 기기에서도 오류없이 볼 수 있게 만든 포트폴리오입니다.",
+   },
+   {
+        title: "cashmere",
+        adress: "https://cherrysalute.github.io/portfolio_cashmere/",
+        time: "2022.05.06",
+        lang: "html5, css3, javascript",
+        cont: "모던하고 따스하며 세련된 효과와 색감을 사용하고 wow.js를 이용하여 스크롤링 진행 시 애니메이션 효과를 주어 좀 더 소비자의 눈에 들어올 수 있도록 만든 포트폴리오입니다.",
     },
     {
-        //img: "",  
-        //name:"dfbdf",
-        title:"Wedding site",
-        desc:"웨딩업체의 컨셉과 리뷰를 소개를 하는 포트폴리오입니다. 배경 고정효과로 좀 더 역동적인 효과를 주게 제작되었습니다. ",
-        view:"https://cherrysalute.github.io/portfolio_cakehouse/",
+        title: "weatherAPP",
+        adress: "https://cherrysalute.github.io/portfolio_weatherApp/",
+        time: "2022.05.30",
+        lang: "html5, css3, javascript, ajax",
+        cont: "OpenWeatherMap을 이용하여 만든 날씨 API 포트폴리오입니다. 각 도시명을 입력하면 현재 날씨와 습도, 풍속, 구름 양 등 알 수 있도록 작업했습니다.",
+   },
+   {
+        title: "National Geographic",
+        adress: "https://cherrysalute.github.io/portfoli_Naeo/",
+        time: "2022.07.05",
+        lang: "html5, css3, javascript, Vue",
+        cont: "Vue cnd를 이용하여 각 주제에 맞는 이미지 갤러리를 router를 통해 보여주는 포트폴리오 입니다.",
+   },
+   {
+        title: "adage",
+        adress: "https://cherrysalute.github.io/portfolio_adage/",
+        time: "2022.07.09",
+        lang: "html5, css3, javascript",
+        cont: "hash를 사용하여 같은 구조에서 해쉬값에 따라 내용을 바뀌도록 제작된 작업물입니다.",
     },
     {
-        //img: "",  
-        //name:"dfbdf",
-        title:"BnO",
-        desc:"음향기기 판매를 위한 페이지 포트폴리오 입니다.  flex를 사용해 일정한 간격으로 제품이 나열 되도록 제작되었습니다.",
-        view:"https://cherrysalute.github.io/portfolio_BnO/",
+        title: "hospital",
+        adress: "https://cherrysalute.github.io/portfolio_hospital/",
+        time: "2022.07.09",
+        lang: "html5, css3",
+        cont: "기본적인 구조에 flex로 일정한 간격 배치를 주어서 사용자에게 신뢰성을 주게 제작된 포트폴리오 입니다.",
     },
     {
-        //img: "",  
-        //name:"dfbdf",
-        title:"hospital",
-        desc:"병원 사이트 포티폴리오입니다. 기본적인 구조를 구상하여 제작되었습니다.",
-        view:"https://cherrysalute.github.io/portfolio_hospital/",
-    },
-    {
-        //img: "",  
-        //name:"dfbdf",
-        title:"Origin",
-        desc:"grid를 이용한 포트폴리오 입니다. 반응형으로 제작되어 구간마다 grid값이 다르게 제작되었습니다.",
-        view:"https://cherrysalute.github.io/portfolio_Origin/",
-    },
-    {
-        //img: "",  
-        //name:"dfbdf",
-        title:"Cashmere",
-        desc:"wow.js를 이용한 캐시미어 브랜드 포트폴리오 입니다. 애니메이터의 부드러운 효과로 역동적으로 제작되었습니다.",
-        view:"https://cherrysalute.github.io/portfolio_cashmere/",
-    },
-    {
-        //img: "",  
-        //name:"dfbdf",
-        title:"weatherApp",
-        desc:"ajax를 이용한 현재날씨정보 포트폴리오입니다. 각 도시를 입력하면 현재 날씨와 습도, 풍속, 구름 양을 알수 있도록 제작되었습니다.",
-        view:"https://cherrysalute.github.io/portfolio_weatherApp/",
-    },
-    {
-        //img: "",  
-        //name:"dfbdf",
-        title:"National Geographic",
-        desc:"vue를 이용한 갤러리형 페이지 포트폴리오 입니다. vue cnd을 이용하여 페이지 전환이 빠르도록 제작 되었습니다.",
-        view:"https://cherrysalute.github.io/portfoli_Naeo/#/",
-    },
-    {
-        //img: "",  
-        //name:"dfbdf",
-        title:"adage",
-        desc:"hash를 이용하여 만든 포트폴리오 입니다. hash 값을 통해 같은 페이지지만 내용이 다르도록 제작되었습니다.",
-        view:"https://cherrysalute.github.io/portfolio_adage/",
-    },
-    {
-        //img: "",  
-        //name:"dfbdf",
-        title:"filmmaker",
-        desc:"slick을 이용하여 슬라이드 효과를 준 포트폴리오입니다. 기본적인 구조와 슬라이드 효과를 주는 slick을 이용하여 제작되었습니다.",
-        view:"https://cherrysalute.github.io/portfolio_filmmaker/",
+        title: "rox boss timer",
+        adress: "https://roxbosstime.netlify.app/",
+        time: "2024.01",
+        lang: "html5, css3, javascript",
+        cont: "모바일 게임 '라그나로크X' 의 게임 컨텐츠 중 하나인 필드보스의 출현 남은시간을 입력하여 예상 출현 시간(리얼타임)을 계산하게 만든 페이지입니다. ",
     },
 ]
 
