@@ -2,7 +2,8 @@
   import HeaderSection from "@/components/HeaderSection.vue";
   import FooterSection from "@/components/FooterSection.vue";
   import IntroSection from "@/components/IntroSection.vue";
-  import CarrerSection from "@/components/CarrerSection.vue";
+  import SelfSection from "@/components/SelfSection.vue";
+  import CareerSection from "@/components/CareerSection.vue";
   import PortSection from "@/components/PortSection.vue";
   import ContactSection from "@/components/ContactSection.vue";
   import SkipSection from "@/components/SkipSection.vue";  
@@ -13,7 +14,8 @@
   <HeaderSection />
   <main id="main" role="main">
     <IntroSection />
-    <CarrerSection />
+    <SelfSection />
+    <CareerSection />
     <PortSection />
     <ContactSection />
   </main>

@@ -1,22 +1,22 @@
 <script setup>
-import {carrerText} from "@/constants/index";
+import {careerText} from "@/constants/index";
 </script>
 
 
 <template>
-    <section id="carrer">
-        <div class="carrer__inner">
-            <h2 class="carrer__title">
-                Carrer <em>참여한 작업</em>
+    <section id="career">
+        <div class="career__inner">
+            <h2 class="career__title">
+                career <em>참여한 작업</em>
             </h2>
-            <div class="carrer__list">
-                <div class="carrer__box" v-for="(carrer,key) in carrerText" :key="key">
-                    <div class="title">{{carrer.title}}</div>
-                    <p class="project">{{carrer.project}}</p>
-                    <div class="adress">- 주소: <a :href="carrer.adress">{{carrer.adress}}</a></div>
-                    <div class="join">- 참여분야: {{carrer.join}}</div>
-                    <div class="lang">- 적용기술/언어: {{carrer.lang}}</div>
-                    <div class="cont">- 작업내용: {{carrer.cont}}</div>                
+            <div class="career__list">
+                <div class="career__box" v-for="(career,key) in careerText" :key="key">
+                    <div class="title">{{career.title}}</div>
+                    <p class="project">{{career.project}}</p>
+                    <div class="adress">- 주소: <a :href="career.adress">{{career.adress}}</a></div>
+                    <div class="join">- 참여분야: {{career.join}}</div>
+                    <div class="lang">- 적용기술/언어: {{career.lang}}</div>
+                    <div class="cont">- 작업내용: {{career.cont}}</div>                
                 </div>
             </div>
         </div>
@@ -24,12 +24,12 @@ import {carrerText} from "@/constants/index";
 </template>
 
 <style lang="scss" scoped>
-    #carrer{
+    #career{
         color: var(--white);
         height: 100vh;
     }
 
-    .carrer__inner{
+    .career__inner{
         width: 100%; height: 100%;
         display: flex;
         align-items: flex-start;
@@ -41,7 +41,7 @@ import {carrerText} from "@/constants/index";
             justify-content: center;
         }        
 
-        .carrer__title{
+        .career__title{
             font-size: 10vw;
             font-weight: 700;
             text-transform: uppercase;
@@ -61,11 +61,11 @@ import {carrerText} from "@/constants/index";
             }   
         }
 
-        .carrer__list{
+        .career__list{
             display: flex;
             flex-wrap: wrap;
 
-            .carrer__box{
+            .career__box{
                 width: calc(100% / 2 - 20px); height: 30vh;
 
                 .title{
