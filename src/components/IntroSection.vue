@@ -64,10 +64,10 @@ import {introText} from "@/constants/index";
 
             .text{
                 font-size: 3vw;
-                line-height: 1;
+                line-height: 1.2;
                 font-weight: 900;
                 text-transform: uppercase;
-                text-decoration: underline;
+                //text-decoration: underline;
                 text-align: center;
                 position: absolute;
                 z-index: 100;

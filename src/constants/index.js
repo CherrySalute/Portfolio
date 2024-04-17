@@ -4,6 +4,10 @@ export const headerNav = [
         url: "#intro",
     },
     {
+        title: "self",
+        url: "#self"
+    },
+    {
         title: "career",
         url: "#career",
     },
