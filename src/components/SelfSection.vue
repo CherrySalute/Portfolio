@@ -5,7 +5,7 @@
             <div class="self__box">                
                 <div class="name">김경래</div>
                 <div class="basic">Frontend junior</div>
-                <div class="tech">사용 기술 : vus.js / javascript/ scss / html5 </div>
+                <div class="tech">사용 기술 : vus.js / javascript / scss / html5 </div>
                 <div class="cont">목표 : 많은 사람들이 불편함 없이 이용하고, 즐겁게 편안하게 이용할 수 있는 홈페이지를 만드는 것</div>
                 <div class="iam">
                     안녕하세요. 웹퍼블리셔로 시작한지 1년이 넘은 주니어 개발자 김경래입니다.<br>
@@ -13,6 +13,7 @@
                     그렇게 저는 첫 직장으로 "렌탈프랜드"에서 퍼블리셔로 입사하여 브랜드가 운영중인 페이지의 유지보수를 맡게 되었고, 새로운 브랜드 "niccier"의 런칭으로 온라인 판매를 위한 페이지를 제작하게 되었습니다. 회사규모상 비록 카페24를 이용하여 총괄로 퍼블리싱을 진행하였습니다.
                     현재는 최종꿈인 Frontend로 진화하기 위해서 vue.js를 독학으로 공부하며 자력으로 프로젝트 하나를 제작중입니다.
                 </div>
+                <img src="@/assets/img/flower.jpg" alt="flower">
             </div>
         </div>
     </section>
@@ -32,6 +33,7 @@
         flex-direction: column;
         padding: 20px;
         margin-bottom: 50px;
+        position: relative;        
 
         @media (max-width: 800px){
             justify-content: center;
@@ -55,7 +57,7 @@
         .self__box{
             margin-top: 3vw;
             margin-left: 2vw;
-
+    
 
             .name{
                 font-size: 2vw;
@@ -88,6 +90,18 @@
                 line-height: 2;
                 @media (max-width: 1200px){
                     width: 100%;
+                }
+            }
+
+            img{
+                width: 50vw;
+                position: absolute;
+                top: 0; right: 0;
+                z-index: -1;
+                opacity: 0.5;
+
+                @media (max-width: 800px){
+                    width: 300px;
                 }
             }
         }

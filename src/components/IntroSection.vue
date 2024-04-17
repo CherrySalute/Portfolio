@@ -14,7 +14,7 @@ import {introText} from "@/constants/index";
                     <div>{{introText.desc2}}</div>
                 </div>
                 <div class="img">
-                    <img src="" alt="about">
+                    <img src="@/assets/img/profile.jpg" alt="about">
                 </div>
             </div>
         </div>
@@ -55,12 +55,13 @@ import {introText} from "@/constants/index";
         .intro__text{
             width: 100%; height: 40vh;
             background-color: var(--white);
-            color: var(--black);
+            color: var(--white);
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             position: relative;
+            -webkit-text-stroke: 1px var(--black);
 
             .text{
                 font-size: 3vw;

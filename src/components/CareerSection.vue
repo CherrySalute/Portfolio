@@ -16,7 +16,7 @@ import {careerText} from "@/constants/index";
                     <div class="adress">- 주소: <a :href="career.adress">{{career.adress}}</a></div>
                     <div class="join">- 참여분야: {{career.join}}</div>
                     <div class="lang">- 적용기술/언어: {{career.lang}}</div>
-                    <div class="cont">- 작업내용: {{career.cont}}</div>                
+                    <div class="cont">- 작업내용: {{career.cont}}</div> 
                 </div>
             </div>
         </div>
@@ -66,7 +66,51 @@ import {careerText} from "@/constants/index";
             flex-wrap: wrap;
 
             .career__box{
-                width: calc(100% / 2 - 20px); height: 30vh;
+                width: calc(100% / 2 - 20px); height: 15vw;
+                position: relative;
+                z-index: 1;
+
+
+                
+
+
+                &:nth-child(1)::before{
+                    content: "";
+                    position: absolute;
+                    width: 100%; height: 100%;
+                    top: 0; left: 0;
+                    background: url(@/assets/img/rentalfriend.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: 50% 50%;
+                    opacity: 0.3;
+                    z-index: -1;
+                }
+                &:nth-child(2)::before{
+                    content: "";
+                    position: absolute;
+                    width: 100%; height: 100%;
+                    top: 0; left: 0;
+                    background: url(@/assets/img/allnego.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: 50% 50%;
+                    opacity: 0.3;
+                    z-index: -1;
+                }
+                &:nth-child(3)::before{
+                    content: "";
+                    position: absolute;
+                    width: 100%; height: 100%;
+                    top: 0; left: 0;
+                    background: url(@/assets/img/niccier.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: 50% 50%;
+                    opacity: 1;
+                    z-index: -1;
+                }
+
 
                 .title{
                     font-size: 3vw;
@@ -85,6 +129,8 @@ import {careerText} from "@/constants/index";
                 .cont{
                     padding-left: 1vw;
                 }
+
+                @media (max-width: 1200px){height: 28vw;}
 
                 @media (max-width: 800px){
                     width: 100%; height: 25vh;
