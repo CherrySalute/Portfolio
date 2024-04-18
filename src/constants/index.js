@@ -23,8 +23,8 @@ export const headerNav = [
 
 export const introText = {  
     title: "Front End",
-    desc: "최고는 아니지만 최선을 다해서",
-    desc2: "빠르진 않지만 주어진 시간 내에",
+    desc: "최선을 다해 최고를 추구하며,",
+    desc2: "정확히 한 걸음씩 시간 안에 완성합니다.",
 }
 
 

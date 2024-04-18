@@ -21,6 +21,7 @@
     #self{
         color: var(--white);
         padding-top: 10vh;
+        height: 100vh;
     }  
 
     .self__inner{
