@@ -2,7 +2,7 @@
     <footer id="footer" role="contentinfo">
         <div class="footer__inner">
             <div class="footer__text">
-                2024 This is portfolio.
+                Copyright 2024 salute. All rights reserved.
             </div>            
         </div>
     </footer>
