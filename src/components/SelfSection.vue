@@ -4,7 +4,7 @@
             <h2 class="self__title">소개글</h2>
             <div class="self__box">                
                 <div class="name">김경래</div>
-                <div class="basic">Frontend junior</div>
+                <div class="basic">Junior web publisher</div>
                 <div class="tech">사용 기술 : vue.js / javascript / scss / html5 </div>
                 <div class="cont">목표 : 많은 사람들이 불편함 없이 이용하고, 즐겁게 편안하게 이용할 수 있는 홈페이지를 만드는 것</div>
                 <div class="iam">
