@@ -34,17 +34,17 @@ export const careerText = [
         title: "렌탈프랜드",
         project: "",
         adress: "https://rentalfriend.co.kr",
-        join: "웹사이트 개발/유지보수 퍼블리싱 (참여도 30%)",
+        join: "웹사이트 개발(전체 작업 중 20% 개발참여) / 유지보수 담당",
         lang: "html5, css, javascript, jQuery, 카페24 클라이언트",
-        cont: "유지보수 및 Footer 디자인 변경, 빠른상담 신청페이지 제작, Header 디자인 변경(모바일버전), 메뉴 노출 위치 변경(모바일버전)",
+        cont: "SEO 최적화 진행 작업 참여 및 새로운 렌탈 신청페이지 구축. 지속적인 사이트 유지보수 진행",
     },
     {
         title: "올네고",
         project: "",
         adress: "https://allnego.com",
-        join: "웹사이트 개발/유지보수 퍼블리싱 (참여도 10%)",
+        join: "웹사이트 개발(전체 작업 중 10% 개발참여) / 유지보수 담당",
         lang: "php, css, javascript, jQuery, 해피CGI 재능마켓 클라이언트",
-        cont: "검색창 기능 구현 및 메인페이지 목록 리뉴얼",
+        cont: "검색창 기능 구현 및 메인페이지 목록 리뉴얼 진행.",
     },
     {
         title: "niccier",
@@ -52,7 +52,7 @@ export const careerText = [
         adress: "https://niccier.com",
         join: "웹 퍼블리싱 총괄 및 홈페이지 유지보수 (참여도 100%)",
         lang: "html5, css, javascript, jQuery, 카페24 클라이언트",
-        cont: "사이트 런칭 및 유지보수",
+        cont: "SEO 최적화 진행 작업 및 사이트 전체적인 제작 참여. 런칭 후 사이트 유지보수 진행.",
     },
 ]
 
